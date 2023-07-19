@@ -2,6 +2,8 @@ from lib.main import process_single
 import logging
 import azure.functions as func
 
+export_pdf_bp = func.Blueprint()
+
 def get_param(req: func.HttpRequest, param_name: str):
     param = req.params.get(param_name)
     if not param:
@@ -18,6 +20,8 @@ def export_pdf(url: str, bearer_token: str):
     file_path = process_single(url, bearer_token)
     return file_path
 
+@export_pdf_bp.function_name('export_pdf')
+@export_pdf_bp.route('/export_pdf/{id}', methods=['GET'])
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
