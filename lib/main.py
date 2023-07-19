@@ -1,7 +1,6 @@
 import sys, json, argparse, os, pathlib, time
 import requests
 from dotenv import load_dotenv
-from dataclasses import asdict
 from utils.normalize_filename import normalize_filename
 from utils.Authenticator import Authenticator
 from utils.EnvUtils import get_lt_api_url, get_env_url
