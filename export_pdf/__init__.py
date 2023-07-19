@@ -7,7 +7,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = get_param(req, 'name')
+    bearer_token = req.headers.get('Authorization')
     id = get_param(req, 'id')
+    logging.info('id: ' + id)
+    logging.info('bearer_token: ' + bearer_token)
     
     if name:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
