@@ -11,12 +11,12 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
-  PYTHON_VERSION: '3.10' # set this to the python version to use (supports 3.6, 3.7, 3.8)
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
+  PYTHON_VERSION: "3.10" # set this to the python version to use (supports 3.6, 3.7, 3.8)
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
+
       # Optional: Add step to run tests here
 
       - name: Upload artifact for deployment job
@@ -45,10 +45,10 @@ jobs:
             !venv/
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: build
     environment:
-      name: 'Production'
+      name: "Production"
       url: ${{ steps.deploy-to-function.outputs.webapp-url }}
 
     steps:
@@ -58,12 +58,12 @@ jobs:
           name: python-app
           path: .
 
-      - name: 'Deploy to Azure Functions'
+      - name: "Deploy to Azure Functions"
         uses: Azure/functions-action@v1
         id: deploy-to-function
         with:
-          app-name: 'func-msp-sr-ply-weu'
-          slot-name: 'Production'
+          app-name: "func-msp-sr-ply-weu"
+          slot-name: "Production"
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8D9FEBED0183473FB531551EAEE4665B }}
           scm-do-build-during-deployment: true
