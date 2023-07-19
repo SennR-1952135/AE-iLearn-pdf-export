@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: "./code/" # set this to the path to your web app project, defaults to the repository root
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
   PYTHON_VERSION: "3.10" # set this to the python version to use (supports 3.6, 3.7, 3.8)
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
           source venv/bin/activate
 
       - name: Install dependencies
-        run: pip install -r ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/requirements.txt
+        run: pip install -r requirements.txt
 
       # Optional: Add step to run tests here
 
@@ -41,7 +41,7 @@ jobs:
         with:
           name: python-app
           path: |
-            ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }} 
+            . 
             !venv/
 
   deploy:
@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: python-app
-          path: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          path: .
 
       - name: "Deploy to Azure Functions"
         uses: Azure/functions-action@v1
@@ -65,6 +65,6 @@ jobs:
           app-name: "func-msp-sr-ply-weu"
           slot-name: "Production"
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_08C46980DD3F43EA8DD15D01542BC3EA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E2F3C2AAA9146DA980CB82ED6CCB771 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true

@@ -1,0 +1,1458 @@
+id: __0__
+naam: Ros Beiaard
+datum aangemaakt: 18-04-2022
+beschrijving: <p>Tijdens dit leerspoor komen verschillende aspecten rond het Ros Beiaard aan bod.  Het gaat zowel over de legende, de ommegang als alles daaromheen.</p>
+start scherm tekst: <p>In dit leerspoor leren we meer over het Ros Beiaard.  We leren niet alleen over het verhaal, maar ook over de ommegang en alles er omheen.</p>
+doelen: {
+    {
+        doel: Ik ken het refrein en de eerste strofe van het Ros Beiaardlied.
+    },
+    {
+        doel: Ik kan de sage van het Ros Beiaard in grote lijnen vertellen.
+    },
+    {
+        doel: Ik ken de herkomst van de gildereuzen.
+    },
+    {
+        doel: Ik weet hoe iemand pijnder wordt.
+    },
+    {
+        doel: Ik weet wat de herkomst van de knaptanden is.
+    },
+    {
+        doel: Ik ken de 4 Heemskinderen en hun plaats op het paard.
+    },
+}
+stappen: {
+    {
+        id: <a name="__1__"/>__1__
+        titel: Ros Beiaardlied
+        type: learningActivityStep
+        tool leermateriaal: La Digitale
+        leermateriaal link: https://ladigitale.dev/digiplay/#/v/625ea87c6e2c2
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __3__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__2__"/>__2__
+        titel: Ons Ros voor dummies
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __5__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__3__"/>__3__
+        titel: Wat weet je over de grote mannen?
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/7r91qlUY-iQAF-I1sggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.8oyemdF0ZiGmzmRgQixfo8nodWxUVGJLRNNvq7wPPhE%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __8__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__4__"/>__4__
+        titel: Wildemanloop 
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __10__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__5__"/>__5__
+        titel: Voorbije ommegangen
+        type: quizStep
+        vragen: {
+            {
+                tekst: Van welk jaar zou je een video van de ommegang willen bekijken?
+                antwoord opties: {
+                    {
+                        tekst: 1975
+                        score: 0
+                    },
+                    {
+                        tekst: 1990
+                        score: 1
+                    },
+                    {
+                        tekst: 2000
+                        score: 2
+                    },
+                    {
+                        tekst: 2010
+                        score: 3
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __12__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 0
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __13__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 1
+                        eind: 1
+                        tak nummer: 1
+                    },
+                }
+            },
+            {
+                tak nummer: 2
+                kind stap id: __14__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 2
+                        eind: 2
+                        tak nummer: 2
+                    },
+                }
+            },
+            {
+                tak nummer: 3
+                kind stap id: __15__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 3
+                        eind: 3
+                        tak nummer: 3
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__6__"/>__6__
+        titel: De namen van de Heemskinderen
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/J_4y6Rt7-iQAFQBY1ggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.BfLSPnTT0M4VxRfzT4-iIiOSlk4dUahdtaW2AVlGGEw%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __21__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__7__"/>__7__
+        titel: Teken je knaptand!
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __23__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__8__"/>__8__
+        titel: De knaptanden!
+        type: quizStep
+        vragen: {
+            {
+                tekst: Wanneer gaan de knaptanden uit?
+                antwoord opties: {
+                    {
+                        tekst: Bij de reuzenommegang/Katuit
+                        score: 0
+                    },
+                    {
+                        tekst: Bij de Ros Beiaardommegang
+                        score: 0
+                    },
+                    {
+                        tekst: Bij de reuzenommegang én de Ros Beiaardommegang
+                        score: 1
+                    },
+                }
+            },
+            {
+                tekst: Sinds wanneer gaan de knaptanden al mee in de stoeten?
+                antwoord opties: {
+                    {
+                        tekst: al sinds de 17de eeuw
+                        score: 1
+                    },
+                    {
+                        tekst: al sinds de 19de eeuw
+                        score: 0
+                    },
+                    {
+                        tekst: al sinds 1975
+                        score: 0
+                    },
+                    {
+                        tekst: al sinds 1932
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Welk dier stelt de knaptand voor?
+                antwoord opties: {
+                    {
+                        tekst: een weerwolf
+                        score: 0
+                    },
+                    {
+                        tekst: een vis
+                        score: 1
+                    },
+                    {
+                        tekst: een beer
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wat was vroeger de taak van de knaptanden in de stoet?
+                antwoord opties: {
+                    {
+                        tekst: Zorgen dat kleine kindjes weenden
+                        score: 0
+                    },
+                    {
+                        tekst: Zorgen dat het volk goed aan de kant bleef staan
+                        score: 1
+                    },
+                    {
+                        tekst: Hoeden en petten verzamelen
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Als de knaptanden op de Grote Markt komen, beginnen ze te lopen.  Waarom doen ze dat?
+                antwoord opties: {
+                    {
+                        tekst: Ze willen daar snel weg.
+                        score: 0
+                    },
+                    {
+                        tekst: Ze willen om het eerst op de schoot van de burgemeester zitten.
+                        score: 1
+                    },
+                    {
+                        tekst: Ze zijn blij dat het er op zit en willen snel iets drinken.
+                        score: 0
+                    },
+                    {
+                        tekst: Wie eerst is, mag het jaar daarop opnieuw knaptand zijn.
+                        score: 0
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __25__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 3
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __26__
+                cognitie niveau: good
+                score bereik: {
+                    {
+                        start: 4
+                        eind: 5
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__9__"/>__9__
+        titel: Ketnet - Het Ros Beiaard
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __50__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__10__"/>__10__
+        titel: De tekst van het lied
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/uQGQ2nHx-iQAEJ9cAQgAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.kTaqLHkfpf1qO604Vk10feQflCpzN8ROatMEuYQVrwU%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __52__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__11__"/>__11__
+        titel: Woorden uit de sage
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/_nnmCCGE-iQAEoaPdggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.eW6glCQUJbEncNKju-mycYn6vzZDHYADl5TZP8fsXgc%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __54__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__12__"/>__12__
+        titel: Wildemanloop
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __9__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__13__"/>__13__
+        titel: Het lied!
+        type: quizStep
+        vragen: {
+            {
+                tekst: Ik ken het Ros Beiaardlied uit het hoofd.
+                antwoord opties: {
+                    {
+                        tekst: Ja!  Ik kan het luidkeels meezingen.
+                        score: 1
+                    },
+                    {
+                        tekst: Ja... maar enkel het refrein.
+                        score: 0
+                    },
+                    {
+                        tekst: Nee, ik ken er niet veel van.
+                        score: 0
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __1__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 0
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __51__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 1
+                        eind: 1
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__14__"/>__14__
+        titel: De pijnders
+        type: quizStep
+        vragen: {
+            {
+                tekst: Wat zijn pijnders?
+                antwoord opties: {
+                    {
+                        tekst: Mannen die een blessure krijgen tijdens de stoet.
+                        score: 0
+                    },
+                    {
+                        tekst: Mannen die het paard dragen.
+                        score: 1
+                    },
+                    {
+                        tekst: Mannen die de stoet organiseren.
+                        score: 0
+                    },
+                    {
+                        tekst: Mannen die op het paard zitten.
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wat was het beroep van de oorspronkelijke pijnders in de middeleeuwen?
+                antwoord opties: {
+                    {
+                        tekst: Kappers
+                        score: 0
+                    },
+                    {
+                        tekst: Havenarbeiders
+                        score: 1
+                    },
+                    {
+                        tekst: Vrachtwagenchaffeurs
+                        score: 0
+                    },
+                    {
+                        tekst: Leerkrachten
+                        score: 0
+                    },
+                    {
+                        tekst: Brandweermannen
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Kunnen er ook vrouwelijke pijnders zijn?
+                antwoord opties: {
+                    {
+                        tekst: ja
+                        score: 0
+                    },
+                    {
+                        tekst: nee
+                        score: 1
+                    },
+                }
+            },
+            {
+                tekst: Wanneer ben je automatisch pijnder?
+                antwoord opties: {
+                    {
+                        tekst: Als je het juiste beroep hebt.
+                        score: 0
+                    },
+                    {
+                        tekst: Als je vader pijnder is/was.
+                        score: 1
+                    },
+                    {
+                        tekst: Als je oud genoeg bent.
+                        score: 0
+                    },
+                    {
+                        tekst: Als je een formulier invult daarvoor.
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoe kunnen alle mannen die dat willen pijnder worden?
+                antwoord opties: {
+                    {
+                        tekst: door een cursus te volgen
+                        score: 0
+                    },
+                    {
+                        tekst: door te trainen
+                        score: 0
+                    },
+                    {
+                        tekst: door te slagen in de wildemanloop
+                        score: 1
+                    },
+                    {
+                        tekst: door een formulier in te vullen
+                        score: 0
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __55__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 3
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __9__
+                cognitie niveau: good
+                score bereik: {
+                    {
+                        start: 4
+                        eind: 5
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__15__"/>__15__
+        titel: Toneel Kalleke Step
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __87__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__16__"/>__16__
+        titel: Ons Banier!
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __6__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__17__"/>__17__
+        titel: Woordenschat rond de sage
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/bKVWxx7C-iQAFM3hBggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.ZQZGgxfJce5Zrj9KqV1PfOI6yFJtAOqaL13o5r8AnTQ%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __53__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__18__"/>__18__
+        titel: Afronden van je leerspoor
+        type: learningActivityStep
+    },
+    {
+        id: <a name="__19__"/>__19__
+        titel: Kalleke Step
+        type: quizStep
+        vragen: {
+            {
+                tekst: Kalleke Step is ook de naam van een Dendermonds poppentheater.  Wil je een stukje bekijken?
+                antwoord opties: {
+                    {
+                        tekst: ja
+                        score: 1
+                    },
+                    {
+                        tekst: nee
+                        score: 0
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __87__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 0
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __86__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 1
+                        eind: 1
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__20__"/>__20__
+        titel: Score van de grote mannen
+        type: quizStep
+        vragen: {
+            {
+                tekst: Hoeveel behaalde je op de vorige opdracht?
+                antwoord opties: {
+                    {
+                        tekst: minder dan 10/20
+                        score: 0
+                    },
+                    {
+                        tekst: tussen 10/20 en 13/20
+                        score: 0
+                    },
+                    {
+                        tekst: tussen 14/20 en 19/20
+                        score: 1
+                    },
+                    {
+                        tekst: Een dikke 20!
+                        score: 1
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __94__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 0
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __95__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 1
+                        eind: 1
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__21__"/>__21__
+        titel: Het melodietje
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __49__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__22__"/>__22__
+        titel: Kwis over het Ros Beiaard
+        type: quizStep
+        vragen: {
+            {
+                tekst: Om de hoeveel jaar komt het Ros Beiaard buiten in Dendermonde?
+                antwoord opties: {
+                    {
+                        tekst: om de 20 jaar
+                        score: 0
+                    },
+                    {
+                        tekst: om de 10 jaar
+                        score: 1
+                    },
+                    {
+                        tekst: om de 12 jaar
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wanneer kwam het Ros Beiaard voor het laatst buiten?
+                antwoord opties: {
+                    {
+                        tekst: 2000
+                        score: 0
+                    },
+                    {
+                        tekst: 2010
+                        score: 1
+                    },
+                    {
+                        tekst: 2012
+                        score: 0
+                    },
+                    {
+                        tekst: 2020
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoe hoog is het Ros Beiaard?
+                antwoord opties: {
+                    {
+                        tekst: 4 meter
+                        score: 0
+                    },
+                    {
+                        tekst: 5 meter
+                        score: 1
+                    },
+                    {
+                        tekst: 6 meter
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoe breed is het Ros Beiaard?
+                antwoord opties: {
+                    {
+                        tekst: 2 meter
+                        score: 1
+                    },
+                    {
+                        tekst: 3 meter
+                        score: 0
+                    },
+                    {
+                        tekst: 5 meter
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoeveel weegt het Ros Beiaard?
+                antwoord opties: {
+                    {
+                        tekst: 600 kg
+                        score: 0
+                    },
+                    {
+                        tekst: 800 kg
+                        score: 1
+                    },
+                    {
+                        tekst: 1000 kg
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoeveel pijnders dragen het paard?
+                antwoord opties: {
+                    {
+                        tekst: 12
+                        score: 1
+                    },
+                    {
+                        tekst: 15
+                        score: 0
+                    },
+                    {
+                        tekst: 18
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wat klopt NIET bij het aanstellen van de Heemskinderen?
+                antwoord opties: {
+                    {
+                        tekst: Het moeten 4 broers zijn.
+                        score: 0
+                    },
+                    {
+                        tekst: Ze moeten tussen de 7 en de 21 jaar oud zijn.
+                        score: 0
+                    },
+                    {
+                        tekst: Ze moeten in Dendermonde geboren zijn.
+                        score: 0
+                    },
+                    {
+                        tekst: Ze mogen geen zus hebben.
+                        score: 1
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __102__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 3
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __24__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 4
+                        eind: 5
+                        tak nummer: 1
+                    },
+                }
+            },
+            {
+                tak nummer: 2
+                kind stap id: __24__
+                cognitie niveau: good
+                score bereik: {
+                    {
+                        start: 6
+                        eind: 7
+                        tak nummer: 2
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__23__"/>__23__
+        titel: Ommegang van 2000
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __89__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__24__"/>__24__
+        titel: De sage van het Ros Beiaard
+        type: quizStep
+        vragen: {
+            {
+                tekst: Hoe heet de vader van de vier Heemskinderen?
+                antwoord opties: {
+                    {
+                        tekst: Karel
+                        score: 0
+                    },
+                    {
+                        tekst: Heem
+                        score: 0
+                    },
+                    {
+                        tekst: Aymon
+                        score: 1
+                    },
+                    {
+                        tekst: Sage
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Met wie had de vader van de 4 Heemskinderen al jaren ruzie?
+                antwoord opties: {
+                    {
+                        tekst: Keizer Karel
+                        score: 1
+                    },
+                    {
+                        tekst: Keizer Aymon
+                        score: 0
+                    },
+                    {
+                        tekst: Koning Lodewijk
+                        score: 0
+                    },
+                    {
+                        tekst: Koning Albert
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoe heet de vrouw van Aymon?
+                antwoord opties: {
+                    {
+                        tekst: Adelheid
+                        score: 1
+                    },
+                    {
+                        tekst: Reinhilde
+                        score: 0
+                    },
+                    {
+                        tekst: Josefien
+                        score: 0
+                    },
+                    {
+                        tekst: Eufrazie
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Hoe heten de 4 Heemskinderen?
+                antwoord opties: {
+                    {
+                        tekst: Ritsaert, Coenraet, Adelaert en Reynout
+                        score: 0
+                    },
+                    {
+                        tekst: Writsaert, Coenraet, Adelheim en Reynout
+                        score: 0
+                    },
+                    {
+                        tekst: Ritsaert, Writsaert, Adelaert en Reynout
+                        score: 1
+                    },
+                    {
+                        tekst: Ritsaert, Coenraet, Adelaert en Rombout
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Waarom krijgt Lodewijk het paard in handen?
+                antwoord opties: {
+                    {
+                        tekst: Hij won het in een schaakspel.
+                        score: 1
+                    },
+                    {
+                        tekst: Het was een verjaardagscadeau.
+                        score: 0
+                    },
+                    {
+                        tekst: Ze konden hun belastingen niet meer betalen.
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Waarom vluchten de Heemskinderen op de rug van het Ros Beiaard?
+                antwoord opties: {
+                    {
+                        tekst: Reynout heeft Lodewijk vermoord.
+                        score: 1
+                    },
+                    {
+                        tekst: Adelaert heeft het kasteel in brand gezet.
+                        score: 0
+                    },
+                    {
+                        tekst: Writsaert heeft keizer Karel voor de gek gehouden.
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wie helpt de Heemskinderen ontsnappen naar Dinant uit de greep van keizer Karel?
+                antwoord opties: {
+                    {
+                        tekst: tovenaar Malegijs
+                        score: 1
+                    },
+                    {
+                        tekst: Merlijn de tovenaar
+                        score: 0
+                    },
+                    {
+                        tekst: tovenaar van Oz
+                        score: 0
+                    },
+                    {
+                        tekst: Voldemort
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Wat is het voorstel aan keizer Karel?
+                antwoord opties: {
+                    {
+                        tekst: zijn kasteel in ruil voor het paard
+                        score: 0
+                    },
+                    {
+                        tekst: zijn land in ruil voor het paard
+                        score: 0
+                    },
+                    {
+                        tekst: vrede in ruil voor het paard
+                        score: 1
+                    },
+                }
+            },
+            {
+                tekst: Wat wordt om de nek van het Ros Beiaard gehangen wanneer het in de Dender wordt gegooid?
+                antwoord opties: {
+                    {
+                        tekst: dikke rotsblokken
+                        score: 0
+                    },
+                    {
+                        tekst: zware molenstenen
+                        score: 1
+                    },
+                    {
+                        tekst: grote loden gewichten
+                        score: 0
+                    },
+                }
+            },
+            {
+                tekst: Het paard komt nog een paar keer terug boven.  De hoeveelste keer verdrinkt het echt?
+                antwoord opties: {
+                    {
+                        tekst: de 2de keer
+                        score: 0
+                    },
+                    {
+                        tekst: de 3de keer
+                        score: 1
+                    },
+                    {
+                        tekst: de 4de keer
+                        score: 0
+                    },
+                    {
+                        tekst: de 5de keer
+                        score: 0
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __4__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 5
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __134__
+                cognitie niveau: bad
+                score bereik: {
+                    {
+                        start: 6
+                        eind: 7
+                        tak nummer: 1
+                    },
+                }
+            },
+            {
+                tak nummer: 2
+                kind stap id: __21__
+                cognitie niveau: good
+                score bereik: {
+                    {
+                        start: 8
+                        eind: 10
+                        tak nummer: 2
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__25__"/>__25__
+        titel: Extra info
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __24__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__26__"/>__26__
+        titel: Ommegang van 2021
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __89__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__27__"/>__27__
+        titel: Knaptanden
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __22__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__28__"/>__28__
+        titel: Junes en de pijnders
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __182__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__29__"/>__29__
+        titel: De namen van de Heemskinderen
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/6xuLwtHh-iQAEB48AQgAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.gntfd-30N4NIiNQfJ4AmhbFWOKss5S7xlJIJ11UQw1o%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __21__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__30__"/>__30__
+        titel: Ros Beiaardlied
+        type: learningActivityStep
+        tool leermateriaal: La Digitale
+        leermateriaal link: https://ladigitale.dev/digiplay/#/v/625ea87c6e2c2
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __51__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__31__"/>__31__
+        titel: Narren zijn van alle tijden
+        type: learningActivityStep
+        tool leermateriaal: La Digitale
+        leermateriaal link: https://ladigitale.dev/digiplay/#/v/62605622972b5
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __185__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__32__"/>__32__
+        titel: De dag van de stoet door het oog van de knaptand
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __23__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__33__"/>__33__
+        titel: Hoe word je Heemskind?
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __186__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__34__"/>__34__
+        titel: Junes en het ros
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __11__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__35__"/>__35__
+        titel: De aanstelling van de Heemkinderen
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __187__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__36__"/>__36__
+        titel: Score lied
+        type: quizStep
+        vragen: {
+            {
+                tekst: Hoeveel punten behaalde je bij de voorgaande test in BookWidgets?
+                antwoord opties: {
+                    {
+                        tekst: Minder dan 5
+                        score: 0
+                    },
+                    {
+                        tekst: Tussen 6 en 11
+                        score: 0
+                    },
+                    {
+                        tekst: Tussen 12 en 15
+                        score: 0
+                    },
+                    {
+                        tekst: 16 of meer
+                        score: 1
+                    },
+                }
+            },
+        }
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __49__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 0
+                        eind: 0
+                        tak nummer: 0
+                    },
+                }
+            },
+            {
+                tak nummer: 1
+                kind stap id: __101__
+                cognitie niveau: neutral
+                score bereik: {
+                    {
+                        start: 1
+                        eind: 1
+                        tak nummer: 1
+                    },
+                }
+            },
+        }
+    },
+    {
+        id: <a name="__37__"/>__37__
+        titel: Wat weet je over de wildemanloop?
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/ZeCIFuwe-iQAFktuvggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.8MzcxDbFTKWJQuoIZYN01RslxZYQ8udAayscw0wR5PQ%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __181__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__38__"/>__38__
+        titel: De gildereuzen!
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __88__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__39__"/>__39__
+        titel: Ommegang van 1975
+        type: learningActivityStep
+        tool leermateriaal: La Digitale
+        leermateriaal link: https://ladigitale.dev/digiplay/#/v/626065a741dd8
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __89__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__40__"/>__40__
+        titel: De sage van het Ros Beiaard
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __133__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__41__"/>__41__
+        titel: Puzzel
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/Cm28WVF2-iQAEeQJBggAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.3P0NRezZrx3tHTXa97SmY90k9hFvfTbjW0WZ25TrYks%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __184__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__42__"/>__42__
+        titel: Narren
+        type: learningActivityStep
+        tool leermateriaal: La Digitale
+        leermateriaal link: https://ladigitale.dev/digiplay/#/v/6260596f7b534
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __193__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__43__"/>__43__
+        titel: Kruiswoordraadsel
+        type: learningActivityStep
+        tool leermateriaal: BookWidgets
+        leermateriaal link: https://www.bookwidgets.com/lti/play/PDoYBSsq-iQAFkUQXAgAAA?teacher_id=5616407909761024&iss=https%3A%2F%2Fauth.i-learn.be%2F&sig=v1.yCTtg6Ry6otOjqLOL-rqycqZDCzIYuRBna7r9GTwMP0%3D
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __184__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__44__"/>__44__
+        titel: Tekst Ros Beiaardlied
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __183__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__45__"/>__45__
+        titel: De ticketverkoop
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __61__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__46__"/>__46__
+        titel: Junes en Kalleke Step
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __90__
+                cognitie niveau: good
+            },
+        }
+    },
+    {
+        id: <a name="__47__"/>__47__
+        titel: Ommegang van 1990
+        type: learningActivityStep
+        kinderen: {
+            {
+                tak nummer: 0
+                kind stap id: __89__
+                cognitie niveau: good
+            },
+        }
+    },
+}
+eind scherm tekst: <p>Proficiat!  Het was een hele weg.</p><br/><p>Wanneer iemand jou nu iemand iets vraag over het Ros Beiaard, dan kan je daar sowieso een antwoord op geven.</p><p>Hopelijk zien we jou bij de ommegang!</p>

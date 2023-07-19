@@ -1,0 +1,5 @@
+create LearningTrack(obj), parsing the json
+create LearningTrackWriter(obj), passing the LearningTrack(obj)
+
+open file -> call LearningTrackWriter.write(file, file_type) passing the file and file type
+
