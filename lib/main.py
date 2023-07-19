@@ -1,14 +1,14 @@
 import sys, json, argparse, os, pathlib, time
 import requests
 from dotenv import load_dotenv
-from utils.normalize_filename import normalize_filename
-from utils.Authenticator import Authenticator
-from utils.EnvUtils import get_lt_api_url, get_env_url
-from utils.augment_learningTrack_json import augment_learningTrack_json
-from utils.DBIDTransformer import DBIDTransformer
-from parsing.LearningTrack import learningtrack_from_json
-from writing.objects.LearningTrackAccessor import LearningTrackAccessor
-from writing.visitors.PDFAccessorVisitor import PDFAccessorVisitor
+from lib.utils.normalize_filename import normalize_filename
+from lib.utils.Authenticator import Authenticator
+from lib.utils.EnvUtils import get_lt_api_url, get_env_url
+from lib.utils.augment_learningTrack_json import augment_learningTrack_json
+from lib.utils.DBIDTransformer import DBIDTransformer
+from lib.parsing.LearningTrack import learningtrack_from_json
+from lib.writing.objects.LearningTrackAccessor import LearningTrackAccessor
+from lib.writing.visitors.PDFAccessorVisitor import PDFAccessorVisitor
 
 def main():
     args = parse_cli_args()

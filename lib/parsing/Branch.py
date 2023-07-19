@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from parsing.Question import Question, question_from_json
-from parsing.ScoreRange import ScoreRange, scoreRange_from_json
+from lib.parsing.Question import Question, question_from_json
+from lib.parsing.ScoreRange import ScoreRange, scoreRange_from_json
 
 @dataclass
 class Branch:

@@ -1,5 +1,5 @@
 import requests
-from utils.EnvUtils import get_env_auth_url, get_env_client_id
+from lib.utils.EnvUtils import get_env_auth_url, get_env_client_id
 
 class Authenticator:
     _instance = None

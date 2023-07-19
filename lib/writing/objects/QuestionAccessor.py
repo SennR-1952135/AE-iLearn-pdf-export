@@ -1,7 +1,7 @@
-from parsing import Question
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.objects.AnswerOptionAccessor import AnswerOptionAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.parsing.Question import Question
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.objects.AnswerOptionAccessor import AnswerOptionAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class QuestionAccessor(BaseAccessor):
     def __init__(self, question: Question):

@@ -1,6 +1,6 @@
 import os
 from enum import Enum
-from utils.extract_url_id import extract_url_id
+from lib.utils.extract_url_id import extract_url_id
 
 # create the env enum
 class EnvENUM(Enum):

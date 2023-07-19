@@ -1,12 +1,12 @@
 from datetime import datetime
-from utils.DBIDTransformer import DBIDTransformer
+from lib.utils.DBIDTransformer import DBIDTransformer
 
-from parsing.LearningTrack import LearningTrack
+from lib.parsing.LearningTrack import LearningTrack
 
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.objects.ObjectiveAccessor import ObjectiveAccessor
-from writing.objects.StepAccessor import StepAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.objects.ObjectiveAccessor import ObjectiveAccessor
+from lib.writing.objects.StepAccessor import StepAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 
 class LearningTrackAccessor(BaseAccessor):

@@ -1,5 +1,5 @@
-from parsing.LearningTrack import LearningTrack
-from parsing.Step import Step, Branch
+from lib.parsing.LearningTrack import LearningTrack
+from lib.parsing.Step import Step, Branch
 class LearningTrackGraph:
     
     def __init__(self, lt: LearningTrack) -> None:

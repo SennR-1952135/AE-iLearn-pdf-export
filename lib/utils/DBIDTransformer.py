@@ -1,4 +1,4 @@
-from writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.objects.BaseAccessor import BaseAccessor
 
 class DBIDTransformer:
     def __init__(self) -> None:

@@ -1,8 +1,8 @@
-from parsing import Step
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.objects.BranchAccessor import BranchAccessor
-from writing.objects.QuestionAccessor import QuestionAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.parsing.Step import Step
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.objects.BranchAccessor import BranchAccessor
+from lib.writing.objects.QuestionAccessor import QuestionAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class StepAccessor(BaseAccessor):
     def __init__(self, step: Step):

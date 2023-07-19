@@ -1,4 +1,4 @@
-from writing.files.FileWriterFactory import FileWriterFactory
+from lib.writing.files.FileWriterFactory import FileWriterFactory
 
 class BaseAccessorVisitor:
     

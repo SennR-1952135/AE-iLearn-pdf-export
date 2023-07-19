@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from parsing.Step import Step, step_from_json
-from parsing.Objective import Objective, objective_from_json
+from lib.parsing.Step import Step, step_from_json
+from lib.parsing.Objective import Objective, objective_from_json
 
 @dataclass
 class LearningTrack:

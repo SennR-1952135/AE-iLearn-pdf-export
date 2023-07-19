@@ -5,14 +5,14 @@ from reportlab.platypus import Flowable
 from reportlab.lib import colors
 from textwrap import wrap
 
-from parsing.Branch import Branch
-from parsing.Step import Step
+from lib.parsing.Branch import Branch
+from lib.parsing.Step import Step
 
 import grandalf.graphs as gr
 import grandalf.layouts as layouts
 import grandalf.routing as routing
 
-from utils.graph import LearningTrackGraph
+from lib.utils.graph import LearningTrackGraph
 
 nodeTypeColorMap = {
     'quizStep': colors.Color(0.3, 0.75, 0.93),

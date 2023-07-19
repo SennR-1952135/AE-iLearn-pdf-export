@@ -1,7 +1,7 @@
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
-from writing.objects.LearningTrackAccessor import LearningTrackAccessor
-from writing.objects.BaseAccessor import BaseAccessor
-from utils.graph import LearningTrackGraph
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.writing.objects.LearningTrackAccessor import LearningTrackAccessor
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.utils.graph import LearningTrackGraph
 
 class PDFAccessorVisitor(BaseAccessorVisitor):
     

@@ -2,9 +2,9 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, PageTemplate, Frame, NextPageTemplate, BaseDocTemplate
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.pdfgen import canvas
-from utils.graph import LearningTrackGraph
-from writing.files.pdf.graph import GraphFlowable
-from writing.files.BaseFileWriter import BaseFileWriter
+from lib.utils.graph import LearningTrackGraph
+from lib.writing.files.pdf.graph import GraphFlowable
+from lib.writing.files.BaseFileWriter import BaseFileWriter
 
 class PDFWriter(BaseFileWriter):
     def __init__(self, filename: str) -> None:

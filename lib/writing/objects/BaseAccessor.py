@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from utils.key_translation import key_translation_dict
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.utils.key_translation import key_translation_dict
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class BaseAccessor(ABC):
     data = {}

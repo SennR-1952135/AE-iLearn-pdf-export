@@ -1,6 +1,6 @@
-from parsing import Objective
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.parsing.Objective import Objective
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class ObjectiveAccessor(BaseAccessor):
     def __init__(self, objective: Objective):

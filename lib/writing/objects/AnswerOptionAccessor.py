@@ -1,7 +1,7 @@
-from parsing import AnswerOption
+from lib.parsing.AnswerOption import AnswerOption
 
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 class AnswerOptionAccessor(BaseAccessor):
     def __init__(self, answer_option: AnswerOption) -> None:
         self.answer_option = answer_option

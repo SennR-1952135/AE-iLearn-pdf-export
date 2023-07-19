@@ -1,6 +1,6 @@
-from parsing import ScoreRange
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.parsing.ScoreRange import ScoreRange
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class ScoreRangeAccessor(BaseAccessor):
     def __init__(self, score_range: ScoreRange):

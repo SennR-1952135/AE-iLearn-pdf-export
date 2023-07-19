@@ -1,5 +1,5 @@
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
-from writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.writing.objects.BaseAccessor import BaseAccessor
 
 class TXTAccessorVisitor(BaseAccessorVisitor):
     

@@ -1,6 +1,6 @@
-from writing.files.BaseFileWriter import BaseFileWriter
-from writing.files.pdf.PDFWriter import PDFWriter
-from writing.files.txt.TXTWriter import TXTWriter
+from lib.writing.files.BaseFileWriter import BaseFileWriter
+from lib.writing.files.pdf.PDFWriter import PDFWriter
+from lib.writing.files.txt.TXTWriter import TXTWriter
 
 class FileWriterFactory:
     @staticmethod

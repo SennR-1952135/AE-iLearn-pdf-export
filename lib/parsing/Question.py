@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from parsing.AnswerOption import AnswerOption, answeroption_from_json
+from lib.parsing.AnswerOption import AnswerOption, answeroption_from_json
 
 @dataclass
 class Question:

@@ -1,8 +1,8 @@
-from parsing import Branch
+from lib.parsing.Branch import Branch
 
-from writing.objects.BaseAccessor import BaseAccessor
-from writing.objects.ScoreRangeAccessor import ScoreRangeAccessor
-from writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
+from lib.writing.objects.BaseAccessor import BaseAccessor
+from lib.writing.objects.ScoreRangeAccessor import ScoreRangeAccessor
+from lib.writing.visitors.BaseAccessorVisitor import BaseAccessorVisitor
 
 class BranchAccessor(BaseAccessor):
     def __init__(self, branch: Branch) -> None:

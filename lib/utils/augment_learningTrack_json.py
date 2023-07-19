@@ -1,7 +1,7 @@
 import json
 import requests
-from utils.EnvUtils import get_env_url
-from utils.Authenticator import Authenticator
+from lib.utils.EnvUtils import get_env_url
+from lib.utils.Authenticator import Authenticator
 
 def augment_learningTrack_json(json: dict) -> dict:
     """Augments the learning track json with fields that need to be
