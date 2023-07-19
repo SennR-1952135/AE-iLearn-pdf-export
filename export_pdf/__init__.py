@@ -1,21 +1,7 @@
-from lib.main import process_single
 import logging
 import azure.functions as func
+from .utils import get_param
 
-def get_param(req: func.HttpRequest, param_name: str):
-    param = req.params.get(param_name)
-    if not param:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            param = req_body.get(param_name)
-    return param
-
-def export_pdf(url: str, bearer_token: str):
-    file_path = process_single(url, bearer_token)
-    return file_path
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
