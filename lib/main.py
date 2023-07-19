@@ -1,6 +1,6 @@
 import sys, json, argparse, os, pathlib, time
-from dotenv import load_dotenv
 import requests
+from dotenv import load_dotenv
 from dataclasses import asdict
 from utils.normalize_filename import normalize_filename
 from utils.Authenticator import Authenticator
