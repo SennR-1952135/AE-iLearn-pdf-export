@@ -5,7 +5,7 @@
       "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
-      "name": "test_func",
+      "name": "req",
       "methods": ["get"]
     },
     {
