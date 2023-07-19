@@ -1,4 +1,4 @@
-from writing.files.BaseFileWriter import BaseFileWriter
+from lib.writing.files.BaseFileWriter import BaseFileWriter
 
 class TXTWriter(BaseFileWriter):
     def __init__(self, filename):
