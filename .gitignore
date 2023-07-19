@@ -1,5 +1,5 @@
 # Self generated
-/code/out*/*
+/out*/*
 /.vscode/*
 **/.DS_Store
 .DS_Store
