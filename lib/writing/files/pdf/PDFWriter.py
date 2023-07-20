@@ -27,7 +27,9 @@ class PDFWriter(BaseFileWriter):
         self.font = "Helvetica"
         self.content = []
         self.paragraph_style = getSampleStyleSheet()['Normal']
-        self.graph_page_dimensions = (2000, 4000)        
+        self.graph_page_dimensions = (2000, 4000) 
+
+        self._build()       
 
         # set text page layout
         # self.content.append(NextPageTemplate('textPage'))
@@ -45,8 +47,13 @@ class PDFWriter(BaseFileWriter):
     def _reset_paragraph_style(self) -> None:
         self.paragraph_style = getSampleStyleSheet()['Normal']
 
-    def __del__(self) -> None:
+    def get_file_stream(self):
+        return self.doc
+    
+    def _build(self) -> None:
         """Builds the pdf file, printing the content to the file and saves it to the specified filename"""
+
+        
         self.page_templates = [
             # larger page size for graph
             PageTemplate(id='graphPage', frames=[Frame( 0, 0, self.graph_page_dimensions[0], self.graph_page_dimensions[1], id='graphPage', leftPadding=0, topPadding=0, rightPadding=0, bottomPadding=0)], onPage=self._setGraphPageLayout),
@@ -59,6 +66,7 @@ class PDFWriter(BaseFileWriter):
         
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
+        
 
 
     def write(self, text: str, indent: int=0) -> None:

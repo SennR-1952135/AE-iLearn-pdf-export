@@ -31,10 +31,10 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
       root_path2 = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
       file_path = root_path2 + '/' + file_path
 
-      return func.HttpResponse(
-          f"Id is {id}. bearer_token is {bearer_token}. root_path is {root_path}. root_path2 is {root_path2}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
-          status_code=200
-      )
+      # return func.HttpResponse(
+      #     f"Id is {id}. bearer_token is {bearer_token}. root_path is {root_path}. root_path2 is {root_path2}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
+      #     status_code=200
+      # )
     except Exception as e:
       return func.HttpResponse(
           f"Error exporting pdf: {e}",
