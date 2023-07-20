@@ -39,9 +39,7 @@ class Authenticator:
                 }
             )
         if response.status_code != 200:
-            print("ERROR: Authentication failed")
-            # print(response.json())
-            exit(1)
+            raise Exception("Authentication failed")
 
         return response.json()['access_token']
         
