@@ -26,6 +26,7 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
     try:
       bearer_token = bearer_token.replace('Bearer ', '')
       file_path = export_pdf(id, bearer_token)
+      file_path = file_path.replace('/home/site/wwwroot/', '')
     except Exception as e:
       return func.HttpResponse(
           f"Error exporting pdf: {e}",
