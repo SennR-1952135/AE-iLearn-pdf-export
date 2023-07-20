@@ -62,6 +62,31 @@ def process_multiple(owner: str, bearer_token: str):
     # print(f"Processed {page_size * (page - 1) + len(learning_tracks)} learning tracks in {end_time - start_time} seconds")
     # print(f"Average time per learning track: {(end_time - start_time) / (page_size * (page - 1) + len(learning_tracks))} seconds") 
 
+def process_single_azure(api_url: str, bearer_token: str):
+    """ Process a single learning track (given by url) and write it to a pdf file
+    Parameters
+    ----------
+    api_url : str
+        The url of the learning track to process
+    bearer_token : str
+        The bearer token to use for authentication
+        
+    Returns
+    -------
+    str
+      File stream of the pdf file
+    """
+    
+    lt_json = get_learning_track_json(bearer_token, api_url)
+
+    lt = lt_from_json(lt_json)
+
+    accessor = LearningTrackAccessor(lt)
+    accessorVisitor_pdf = PDFAccessorVisitor('filler.pdf')
+    accessor.accept(accessorVisitor_pdf)
+    return accessorVisitor_pdf.file_writer.get_file_stream()
+
+
 def process_single(api_url: str, bearer_token: str):
     """ Process a single learning track (given by url) and write it to a pdf file
     Parameters

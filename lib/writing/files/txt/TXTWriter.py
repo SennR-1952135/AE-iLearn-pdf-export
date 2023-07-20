@@ -27,3 +27,9 @@ class TXTWriter(BaseFileWriter):
         # else:
         #     self.file.write(f'{key}: {value}\n')
         self.file.write(f'{key}: {value}\n')
+
+    def build(self) -> None:
+        pass
+    
+    def get_file_stream(self):
+        pass

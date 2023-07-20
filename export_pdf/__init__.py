@@ -1,6 +1,8 @@
 import logging, os
 import azure.functions as func
-from .utils import get_param, export_pdf
+from .utils import get_param
+from lib.main import process_single_azure
+from lib.utils.EnvUtils import get_lt_api_url_from_id
 
 
 def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
@@ -25,11 +27,8 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
     
     try:
       bearer_token = bearer_token.replace('Bearer ', '')
-      file_path = export_pdf(id, bearer_token)
-      file_path = file_path.replace('/home/site/wwwroot/', '')
-      root_path = context.function_directory
-      root_path2 = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-      file_path = root_path2 + '/' + file_path
+      api_url = get_lt_api_url_from_id(id)
+      file_stream = process_single_azure(api_url, bearer_token)
 
       # return func.HttpResponse(
       #     f"Id is {id}. bearer_token is {bearer_token}. root_path is {root_path}. root_path2 is {root_path2}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
@@ -42,16 +41,15 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
       )
     
     try:
-      with open(file_path, 'rb') as f:
-        mime_type = 'application/pdf'
-        return func.HttpResponse(
-            f.read(),
-            status_code=200,
-            mimetype=mime_type,
-            headers={
-                'Content-Disposition': f'attachment;filename={file_path}'
-            }
-        )
+      mime_type = 'application/pdf'
+      return func.HttpResponse(
+          file_stream.read(),
+          status_code=200,
+          mimetype=mime_type,
+          headers={
+              'Content-Disposition': f'attachment;filename={"export.pdf"}'
+          }
+      )
       # return func.HttpResponse(
       #     f"Id is {id}. bearer_token is {bearer_token}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
       #     status_code=200
