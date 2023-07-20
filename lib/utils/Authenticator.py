@@ -42,4 +42,25 @@ class Authenticator:
             raise Exception("Authentication failed")
 
         return response.json()['access_token']
+    
+    def authenticate_user(self, username, password) -> str:
+        """Authenticate user with username and password, instantiates Singleton Authenticator class
+
+        Returns
+        -------
+        str: bearer_token
+        """
+        if username and password:
+          self.username = username
+          self.password = password
+          
+        elif not self.username and not self.password:
+            raise Exception("No username and password provided")
+            print("ERROR: No username and password provided")
+            # bearer_token = args.bearer_token if args.bearer_token else os.getenv("BEARER_TOKEN")
+        
+        bearer_token = self.get_bearer_token() # Instantiate Authenticator class and call get_bearer_token method
+        return bearer_token
+    
+
         
