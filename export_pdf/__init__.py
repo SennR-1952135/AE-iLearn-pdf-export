@@ -1,7 +1,7 @@
 import logging, os, io
 import azure.functions as func
 from .utils import get_param
-from lib.main import process_single_azure
+from lib.utils.processing import process_single_azure
 from lib.utils.EnvUtils import get_lt_api_url_from_id
 
 

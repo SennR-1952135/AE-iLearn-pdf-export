@@ -86,8 +86,8 @@ def process_single(api_url: str, bearer_token: str):
     out_dirpath = get_project_root()
     out_dirpath = out_dirpath / 'out'
 
-    fname = normalize_filename(f'{lt_json["name"]}({lt_json["id"]}).pdf')
-    fname = str(out_dirpath / fname ) # TODO: what if name has /, \, ., etc.?
+    fname = normalize_filename(f'{lt_json["name"]}({lt_json["id"]}).pdf') # What if name has /, \, ., etc.?
+    fname = str(out_dirpath / fname ) 
 
     lt = learningTrack_from_json(lt_json)
 

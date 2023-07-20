@@ -2,8 +2,8 @@ import logging
 
 import azure.functions as func
 
-
 def main(req: func.HttpRequest) -> func.HttpResponse:
+    # TODO: implement
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
