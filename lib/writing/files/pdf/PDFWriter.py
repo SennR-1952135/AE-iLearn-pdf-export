@@ -59,15 +59,16 @@ class PDFWriter(BaseFileWriter):
         self.paragraph_style = getSampleStyleSheet()['Normal']
 
     def get_file_stream(self):
-        fs = io.BytesIO()
-        self.doc = SimpleDocTemplate(fs, pagesize=letter, rightMargin=self.marginX, leftMargin=self.marginX,
+        buffer = io.BytesIO()
+        # print(len(self.content))
+        self.doc = SimpleDocTemplate(buffer, pagesize=letter, rightMargin=self.marginX, leftMargin=self.marginX,
                                       topMargin=self.marginY, bottomMargin=self.marginY,
                                       showBoundary=0 )
         self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
         # fs.seek(0)
-        return fs
+        return buffer
     
     def build(self) -> None:
         """Builds the pdf file, printing the content to the file and saves it to the specified filename"""
@@ -77,6 +78,8 @@ class PDFWriter(BaseFileWriter):
                                       showBoundary=0 )
         self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
+        print(len(self.content))
+        # content = self.content.copy()
         self.doc.build(self.content)
 
 

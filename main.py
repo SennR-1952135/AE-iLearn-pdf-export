@@ -25,9 +25,12 @@ def main():
         process_multiple(owner, bearer_token)
     else:
         api_url = get_lt_api_url(args.learning_track_url) if args.learning_track_url else get_lt_api_url(os.getenv("URL"))
-        fs = process_single_azure(api_url, bearer_token)    
+        buffer = process_single_azure(api_url, bearer_token)
+        # check filestream
+        print(buffer.getvalue())
+
         with open('export.pdf', 'wb') as f:
-            f.write(fs.read()) 
+            f.write(buffer.getvalue())
       
 
 def process_multiple(owner: str, bearer_token: str):
