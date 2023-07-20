@@ -22,7 +22,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "Unauthorized: Please pass a bearer token in the Authorization header",
             status_code=401
         )
+    
     # try:
+    bearer_token = bearer_token.replace('Bearer ', '')
     file_path = export_pdf(id, bearer_token)
     # except Exception as e:
     #   return func.HttpResponse(

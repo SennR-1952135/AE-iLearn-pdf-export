@@ -11,7 +11,7 @@ class EnvENUM(Enum):
 
 # export the env url by getting the env enum value form the env variable
 def get_env_url():
-    return EnvENUM[os.getenv('ENV')].value
+    return EnvENUM[os.getenv('ENV').lower()].value
 
 class EnvAuthENUM(Enum):
     # create the enum members
@@ -20,7 +20,7 @@ class EnvAuthENUM(Enum):
     prod = 'https://auth.i-learn.be/oauth/token'
 
 def get_env_auth_url() -> str:
-    return EnvAuthENUM[os.getenv('ENV')].value
+    return EnvAuthENUM[os.getenv('ENV').lower()].value
 
 class EnvClientIdENUM(Enum):
     # create the enum members
@@ -29,7 +29,7 @@ class EnvClientIdENUM(Enum):
     prod = 'cXUqcDXEFmEF0001sKsmiyBhEBNnMPq2'
 
 def get_env_client_id() -> str:
-    return EnvClientIdENUM[os.getenv('ENV')].value
+    return EnvClientIdENUM[os.getenv('ENV').lower()].value
 
 def get_lt_api_url(lt_url) -> str:
     lt_url = get_env_url() + '/api/learningmaterials/' + extract_url_id(lt_url)

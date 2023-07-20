@@ -145,7 +145,9 @@ def get_learning_track_json(bearer_token, api_url):
     }
 
     response = requests.get(api_url, headers=headers)
-    print(response.status_code)
+
+    if response.status_code != 200:
+        raise Exception("Failed to get learning track json (status code: " + str(response.status_code) + ")" )
 
     return response.json()
 
