@@ -1,4 +1,4 @@
-import logging, os
+import logging, os, io
 import azure.functions as func
 from .utils import get_param
 from lib.main import process_single_azure
@@ -28,7 +28,7 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
     try:
       bearer_token = bearer_token.replace('Bearer ', '')
       api_url = get_lt_api_url_from_id(id)
-      file_stream = process_single_azure(api_url, bearer_token)
+      file_stream: io.BytesIO = process_single_azure(api_url, bearer_token)
 
       # return func.HttpResponse(
       #     f"Id is {id}. bearer_token is {bearer_token}. root_path is {root_path}. root_path2 is {root_path2}. Filepath is {file_path}. This HTTP triggered function executed successfully.",

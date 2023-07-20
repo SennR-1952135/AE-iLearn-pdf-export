@@ -66,7 +66,7 @@ class PDFWriter(BaseFileWriter):
         self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
-        fs.seek(0)
+        # fs.seek(0)
         return fs
     
     def build(self) -> None:
