@@ -46,9 +46,9 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
           file_stream.getvalue(),
           status_code=200,
           mimetype=mime_type,
-          headers={
-              'Content-Disposition': f'attachment;filename={"export.pdf"}'
-          }
+          # headers={
+          #     'Content-Disposition': f'attachment;filename={"export.pdf"}'
+          # }
       )
       # return func.HttpResponse(
       #     f"Id is {id}. bearer_token is {bearer_token}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
