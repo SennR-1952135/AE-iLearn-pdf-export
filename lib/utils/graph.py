@@ -1,17 +1,29 @@
 from lib.parsing.LearningTrack import LearningTrack
 from lib.parsing.Step import Step, Branch
 class LearningTrackGraph:
-    
+    """A graph data structure that represents a learning track
+    Attributes
+    ----------
+    lt : LearningTrack
+        The learning track that this graph represents
+    steps : list[Step]
+        A list of all steps in the learning track
+    step_dict : dict[str, Step]
+        A dictionary that maps step ids to step objects
+    adjacency_list : dict[str, list[Branch]]
+        A dictionary that maps step ids to a list of branches to children of that step
+      """
     def __init__(self, lt: LearningTrack) -> None:
         self.lt = lt
         self.steps = lt.steps
         self.step_dict = {}
-        self.adjacency_list = {} # maps step id to list of branches to children of that step
+        self.adjacency_list = {}
 
         self._init_step_dict()
         self._init_adjacency_list()
         self._build_graph()
-        pass
+
+
     def _init_step_dict(self) -> None:
         for step in self.steps:
             self.step_dict[step.id] = step

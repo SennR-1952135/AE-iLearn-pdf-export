@@ -1,3 +1,5 @@
+# This file defines the code needed to write a LearningTrackGraph datastructure to a pdf file.
+
 from typing import Tuple
 from collections import deque
 from reportlab.pdfgen import canvas

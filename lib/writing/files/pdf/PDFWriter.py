@@ -29,14 +29,12 @@ class PDFWriter(BaseFileWriter):
         self.content = []
         self.paragraph_style = getSampleStyleSheet()['Normal']
         self.graph_page_dimensions = (2000, 4000) 
-        # self._build()       
 
         # set text page layout
         # self.content.append(NextPageTemplate('textPage'))
 
-    def __del__(self):
-        self.build()
-
+    # def __del__(self):
+    #     self.build()
 
     def _setTextPageLayout(self, canvas: canvas.Canvas, doc: BaseDocTemplate) -> None:
         canvas.saveState()
@@ -59,15 +57,14 @@ class PDFWriter(BaseFileWriter):
         self.paragraph_style = getSampleStyleSheet()['Normal']
 
     def get_file_stream(self):
+        """Builds the pdf file, writes the pdf content (bytes) to a file stream, and returns the file stream"""
         buffer = io.BytesIO()
-        # print(len(self.content))
         self.doc = SimpleDocTemplate(buffer, pagesize=letter, rightMargin=self.marginX, leftMargin=self.marginX,
                                       topMargin=self.marginY, bottomMargin=self.marginY,
                                       showBoundary=0 )
         self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
-        # fs.seek(0)
         return buffer
     
     def build(self) -> None:
@@ -78,10 +75,7 @@ class PDFWriter(BaseFileWriter):
                                       showBoundary=0 )
         self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
-        print(len(self.content))
-        # content = self.content.copy()
         self.doc.build(self.content)
-
 
     def write(self, text: str, indent: int=0) -> None:
         """Writes text to the pdf file, with an optional indent"""
@@ -94,14 +88,13 @@ class PDFWriter(BaseFileWriter):
     def write_pair(self, key: str, value: str, indent: int=0) -> None:
         """Writes a key value pair to the pdf file, with an optional indent"""
         self.paragraph_style.leftIndent = indent * self.tab_width
-        # self.paragraph_style.firstLineIndent = -1 * self.paragraph_style.leftIndent
         text = f'{key}: {value}'
         self.content.append(Paragraph(text, self.paragraph_style))
         self._reset_paragraph_style()
 
         
     def add_LearningTrack_graph(self, graph: LearningTrackGraph, key_mapping: dict) -> None:
-        """Creates and adds a LearningTrackGraph to the pdf files contents"""
+        """Creates a GraphFlowable object (printable to pdf) from the given LearningTrackGraph and adds it to the pdf content"""
         gf = GraphFlowable(graph, key_mapping)
         self.graph_page_dimensions = gf.get_dimensions()
 
