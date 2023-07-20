@@ -5,9 +5,9 @@ from lib.utils.extract_url_id import extract_url_id
 # create the env enum
 class EnvENUM(Enum):
     # create the enum members
-    DEV = 'https://dev.i-learn.be'
-    TEST = 'https://test.i-learn.be'
-    PROD = 'https://myway.i-learn.be'
+    dev = 'https://dev.i-learn.be'
+    test = 'https://test.i-learn.be'
+    prod = 'https://myway.i-learn.be'
 
 # export the env url by getting the env enum value form the env variable
 def get_env_url():
@@ -15,18 +15,18 @@ def get_env_url():
 
 class EnvAuthENUM(Enum):
     # create the enum members
-    DEV = 'https://auth-dev.i-learn.be/oauth/token'
-    TEST = 'https://auth-test.i-learn.be/oauth/token'
-    PROD = 'https://auth.i-learn.be/oauth/token'
+    dev = 'https://auth-dev.i-learn.be/oauth/token'
+    test = 'https://auth-test.i-learn.be/oauth/token'
+    prod = 'https://auth.i-learn.be/oauth/token'
 
 def get_env_auth_url() -> str:
     return EnvAuthENUM[os.getenv('ENV')].value
 
 class EnvClientIdENUM(Enum):
     # create the enum members
-    DEV = 'oO7V4v23QcUBDHBxYs1VV4c59nfLVjzC'
-    TEST = 'K4v7c44HdUEHzM7SUXfxZ0qimEY8LJW0'
-    PROD = 'cXUqcDXEFmEF0001sKsmiyBhEBNnMPq2'
+    dev = 'oO7V4v23QcUBDHBxYs1VV4c59nfLVjzC'
+    test = 'K4v7c44HdUEHzM7SUXfxZ0qimEY8LJW0'
+    prod = 'cXUqcDXEFmEF0001sKsmiyBhEBNnMPq2'
 
 def get_env_client_id() -> str:
     return EnvClientIdENUM[os.getenv('ENV')].value
