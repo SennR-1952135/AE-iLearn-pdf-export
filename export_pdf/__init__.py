@@ -3,7 +3,7 @@ import azure.functions as func
 from .utils import get_param, export_pdf
 
 
-def main(req: func.HttpReques, context: func.Context) -> func.HttpResponse:
+def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     bearer_token = req.headers.get('Authorization')
