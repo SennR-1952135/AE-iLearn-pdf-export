@@ -30,10 +30,6 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
       api_url = get_lt_api_url_from_id(id)
       file_stream: io.BytesIO = process_single_azure(api_url, bearer_token)
 
-      # return func.HttpResponse(
-      #     f"Id is {id}. bearer_token is {bearer_token}. root_path is {root_path}. root_path2 is {root_path2}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
-      #     status_code=200
-      # )
     except Exception as e:
       return func.HttpResponse(
           f"Error exporting pdf: {e}",
@@ -41,11 +37,6 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
       )
     
     try:
-      # return func.HttpResponse(
-      #    f"{file_stream.getvalue()}",
-      #     status_code=200
-      # )
-
       mime_type = 'application/pdf'
       return func.HttpResponse(
           body=file_stream.getvalue(),
@@ -57,10 +48,7 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
               'Content-Disposition': f'attachment;filename={"export.pdf"}'
           }
       )
-      # return func.HttpResponse(
-      #     f"Id is {id}. bearer_token is {bearer_token}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
-      #     status_code=200
-      # )
+
     except Exception as e:
       return func.HttpResponse(
           f"Error: {e}",
