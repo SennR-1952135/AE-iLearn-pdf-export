@@ -29,15 +29,14 @@ class PDFWriter(BaseFileWriter):
         self.content = []
         self.paragraph_style = getSampleStyleSheet()['Normal']
         self.graph_page_dimensions = (2000, 4000) 
-
-        self._set_page_templates
         # self._build()       
 
         # set text page layout
         # self.content.append(NextPageTemplate('textPage'))
 
     def __del__(self):
-        self.build()        
+        self.build()
+
 
     def _setTextPageLayout(self, canvas: canvas.Canvas, doc: BaseDocTemplate) -> None:
         canvas.saveState()
@@ -64,7 +63,7 @@ class PDFWriter(BaseFileWriter):
         self.doc = SimpleDocTemplate(fs, pagesize=letter, rightMargin=self.marginX, leftMargin=self.marginX,
                                       topMargin=self.marginY, bottomMargin=self.marginY,
                                       showBoundary=0 )
-        
+        self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
         fs.seek(0)
@@ -76,7 +75,7 @@ class PDFWriter(BaseFileWriter):
         self.doc = SimpleDocTemplate(self.filename, pagesize=letter, rightMargin=self.marginX, leftMargin=self.marginX,
                                       topMargin=self.marginY, bottomMargin=self.marginY,
                                       showBoundary=0 )
-        
+        self._set_page_templates()
         self.doc.addPageTemplates(self.page_templates)
         self.doc.build(self.content)
 
