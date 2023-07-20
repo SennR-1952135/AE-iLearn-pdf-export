@@ -41,6 +41,11 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
       )
     
     try:
+      return func.HttpResponse(
+         f"{file_stream.getvalue()}",
+          status_code=200
+      )
+
       mime_type = 'application/pdf'
       return func.HttpResponse(
           file_stream.getvalue(),
