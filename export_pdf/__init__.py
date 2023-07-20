@@ -3,7 +3,7 @@ import azure.functions as func
 from .utils import get_param, export_pdf
 
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
+def main(req: func.HttpReques, context: func.Context) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     bearer_token = req.headers.get('Authorization')
@@ -23,20 +23,30 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             status_code=401
         )
     
-    # try:
-    bearer_token = bearer_token.replace('Bearer ', '')
-    file_path = export_pdf(id, bearer_token)
-    # except Exception as e:
-    #   return func.HttpResponse(
-    #       f"Error exporting pdf: {e}",
-    #       status_code=500
-    #   )
+    try:
+      bearer_token = bearer_token.replace('Bearer ', '')
+      file_path = export_pdf(id, bearer_token)
+    except Exception as e:
+      return func.HttpResponse(
+          f"Error exporting pdf: {e}",
+          status_code=500
+      )
     
     try:
-      return func.HttpResponse(
-          f"Id is {id}. bearer_token is {bearer_token}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
-          status_code=200
-      )
+      with open(file_path, 'rb') as f:
+        mime_type = 'application/pdf'
+        return func.HttpResponse(
+            f.read(),
+            status_code=200,
+            mimetype=mime_type,
+            headers={
+                'Content-Disposition': f'attachment;filename={file_path}'
+            }
+        )
+      # return func.HttpResponse(
+      #     f"Id is {id}. bearer_token is {bearer_token}. Filepath is {file_path}. This HTTP triggered function executed successfully.",
+      #     status_code=200
+      # )
     except Exception as e:
       return func.HttpResponse(
           f"Error: {e}",
